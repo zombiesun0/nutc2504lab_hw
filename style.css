@@ -1,0 +1,134 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* 側邊欄 */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background: #34495e;
+    color: #3498db;
+}
+
+/* 主內容區 */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+}
+
+.section {
+    padding: 60px 0;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #3498db;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* 卡片設計 */
+.card, .project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* 技能標籤佈局 */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px 0;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+}
