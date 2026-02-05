@@ -8,6 +8,9 @@
 - Email：loveop1999@gmail.com
 - Github：zombiesun0
 
+### 自介連結
+https://zombiesun0.github.io/nutc2504lab_hw/
+
 ## 📂 目錄結構
 ```
 ├── .github/        
